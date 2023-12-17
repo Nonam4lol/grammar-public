@@ -1,0 +1,4 @@
+discord.py==1.7.3
+python-dotenv==0.19.1
+language-tool-python==2.5.3
+googletrans==4.0.0-rc1
