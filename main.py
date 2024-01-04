@@ -213,7 +213,6 @@ async def on_message(message):
                 corrected_message = corrected_message[:match.offset] + match.replacements[0] + corrected_message[match.offset + match.errorLength:]
 
             await message.channel.send(f'Did you mean: "{corrected_message}" ? || <@!{message.author.id}>')
-            return  # Add this line
 
         await bot.process_commands(message)
     except Exception as e:
